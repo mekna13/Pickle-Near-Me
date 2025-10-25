@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/meghnapradhan/Desktop/code%20projects/pickle_project/pickle-near-me/src/app/page.tsx"],"sourcesContent":["import Map from \"./components/Map\"\n\nexport default function Home() {\n  return (\n    <main className=\"flex min-h-screen flex-col items-center justify-between p-24\">\n      <div className=\"z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex\">\n        <h1 className=\"text-4xl font-bold text-center\">\n          🥒 Pickle Near Me\n        </h1>\n      </div>\n\n      <div className=\"flex\">\n        <div className=\"w-1/2 pb-4\" style={{maxHeight: \"calc(100vh - 64px)\", overflowX: \"scroll\" }}>\n          Dress List\n        </div>\n        <div className=\"w-1/2\">\n          <Map />\n        </div>\n      </div>\n    </main>\n  )\n}"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAK,WAAU;;0BACd,8OAAC;gBAAI,WAAU;0BACb,cAAA,8OAAC;oBAAG,WAAU;8BAAiC;;;;;;;;;;;0BAKjD,8OAAC;gBAAI,WAAU;;kCACb,8OAAC;wBAAI,WAAU;wBAAa,OAAO;4BAAC,WAAW;4BAAsB,WAAW;wBAAS;kCAAG;;;;;;kCAG5F,8OAAC;wBAAI,WAAU;kCACb,cAAA,8OAAC;;;;;;;;;;;;;;;;;;;;;;AAKX","debugId":null}}]
+}

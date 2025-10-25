@@ -1,0 +1,29 @@
+[00:00:00.657] Server  LOG      ✓ Ready in 430ms
+[00:00:04.081] Browser WARN    This page appears to be missing CSS declarations for Mapbox GL JS, which may cause the map to display incorrectly. Please ensure your page includes mapbox-gl.css, as described in https://www.mapbox.com/mapbox-gl-js/api/.
+[00:00:04.081] Browser ERROR   {}
+[00:00:08.955] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading '0')
+[00:00:08.956] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading '0')
+[00:00:08.956] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading '0')
+[00:00:45.614] Server  LOG        Reload env: .env
+[00:00:45.707] Server  LOG      ✓ Compiled in 43ms
+[00:00:52.004] Browser WARN    This page appears to be missing CSS declarations for Mapbox GL JS, which may cause the map to display incorrectly. Please ensure your page includes mapbox-gl.css, as described in https://www.mapbox.com/mapbox-gl-js/api/.
+[00:01:01.343] Browser WARN    Image "motorway-exit-9" could not be loaded. Please make sure you have added the image with map.addImage() or a "sprite" property in your style. You can provide missing images by listening for the "styleimagemissing" map event.
+[00:01:01.343] Browser WARN    Image "motorway-exit-11" could not be loaded. Please make sure you have added the image with map.addImage() or a "sprite" property in your style. You can provide missing images by listening for the "styleimagemissing" map event.
+[00:01:07.818] Browser WARN    This page appears to be missing CSS declarations for Mapbox GL JS, which may cause the map to display incorrectly. Please ensure your page includes mapbox-gl.css, as described in https://www.mapbox.com/mapbox-gl-js/api/.
+[00:03:25.097] Browser WARN    Image "motorway-exit-9" could not be loaded. Please make sure you have added the image with map.addImage() or a "sprite" property in your style. You can provide missing images by listening for the "styleimagemissing" map event.
+[00:03:25.098] Browser WARN    Image "motorway-exit-11" could not be loaded. Please make sure you have added the image with map.addImage() or a "sprite" property in your style. You can provide missing images by listening for the "styleimagemissing" map event.
+[00:03:25.098] Browser WARN    Image "motorway-exit-16" could not be loaded. Please make sure you have added the image with map.addImage() or a "sprite" property in your style. You can provide missing images by listening for the "styleimagemissing" map event.
+[00:05:39.155] Server  LOG      ✓ Compiled in 54ms
+[02:10:49.762] Server  LOG      ✓ Compiled in 225ms
+[02:16:09.434] Server  LOG      ✓ Compiled in 238ms
+[02:21:21.437] Browser WARN    Image "-11" could not be loaded. Please make sure you have added the image with map.addImage() or a "sprite" property in your style. You can provide missing images by listening for the "styleimagemissing" map event.
+[02:23:43.451] Server  LOG      ✓ Compiled in 44ms
+[02:29:32.246] Server  LOG      ✓ Compiled in 170ms
+[02:29:42.540] Server  LOG      ✓ Compiled in 18ms
+[02:29:42.738] Browser WARN    This page appears to be missing CSS declarations for Mapbox GL JS, which may cause the map to display incorrectly. Please ensure your page includes mapbox-gl.css, as described in https://www.mapbox.com/mapbox-gl-js/api/.
+[02:29:45.652] Server  LOG      ✓ Compiled in 61ms
+[02:29:49.984] Server  LOG      ✓ Compiled in 93ms
+[02:29:50.743] Browser WARN    This page appears to be missing CSS declarations for Mapbox GL JS, which may cause the map to display incorrectly. Please ensure your page includes mapbox-gl.css, as described in https://www.mapbox.com/mapbox-gl-js/api/.
+[02:30:01.436] Server  LOG      ✓ Compiled in 92ms
+[02:30:05.566] Server  LOG      ✓ Compiled in 32ms
+[02:30:30.504] Browser WARN    Image "motorway-exit-11" could not be loaded. Please make sure you have added the image with map.addImage() or a "sprite" property in your style. You can provide missing images by listening for the "styleimagemissing" map event.
