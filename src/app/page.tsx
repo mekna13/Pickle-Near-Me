@@ -21,35 +21,79 @@ export interface PickleLocation {
 export default function Home() {
 
   const [userLocation, setUserLocation] = useState<Location>()
+  const [mapCenter, setMapCenter] = useState<Location>()
   const [isOpen, setIsOpen] = useState<boolean>(true)
   const [pickleLocations, setPickleLocations] = useState<PickleLocation[]>([])
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
 
-  useEffect(() => {
-    const fetchPickleLocations = async () => {
-      setIsLoading(true)
-      setError(null)
+  const fetchPickleLocationsByCity = async () => {
+    setIsLoading(true)
+    setError(null)
 
-      try {
-        const response = await fetch(process.env.NEXT_PUBLIC_API_ENDPOINT! + "/RentalsData?cityId=nyc")
+    try {
+      const response = await fetch(process.env.NEXT_PUBLIC_API_ENDPOINT! + "/RentalsData?cityId=nyc")
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`)
-        }
-
-        const data: PickleLocation[] = await response.json()
-        setPickleLocations(data)
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to fetch pickle locations')
-        console.error('Error fetching pickle locations:', err)
-      } finally {
-        setIsLoading(false)
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
       }
-    }
 
-    fetchPickleLocations()
+      const data: PickleLocation[] = await response.json()
+      setPickleLocations(data)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to fetch pickle locations')
+      console.error('Error fetching pickle locations:', err)
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
+  const fetchPickleLocationsByCoordinates = async (latitude: number, longitude: number) => {
+    setIsLoading(true)
+    setError(null)
+
+    try {
+      const response = await fetch(process.env.NEXT_PUBLIC_API_ENDPOINT! + "/RentalsData", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          latitude,
+          longitude,
+          limit: 10
+        })
+      })
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+
+      const data: PickleLocation[] = await response.json()
+      setPickleLocations(data)
+      if (data.length > 0) {
+        setMapCenter({
+          latitude: data[0].latitude,
+          longitude: data[0].longitude
+        })
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to fetch nearby pickle locations')
+      console.error('Error fetching nearby pickle locations:', err)
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    fetchPickleLocationsByCity()
   }, [])
+
+  useEffect(() => {
+    if (userLocation) {
+      fetchPickleLocationsByCoordinates(userLocation.latitude, userLocation.longitude)
+    }
+  }, [userLocation])
 
   const onLocationGranted = (latitude: number, longitude: number) => {
     setUserLocation({ latitude, longitude })
@@ -102,7 +146,7 @@ export default function Home() {
         onSkip={onSkip}
       />
       <div className="w-screen h-screen">
-        <MapStart userLocation={userLocation} pickleLocations={pickleLocations} />
+        <MapStart userLocation={userLocation} mapCenter={mapCenter} pickleLocations={pickleLocations} />
       </div>
     </main>
   )

@@ -23,12 +23,13 @@ interface PickleLocation {
 
 interface MapStartProps {
   userLocation?: UserLocation | null
-    pickleLocations: PickleLocation[]
+  mapCenter?: UserLocation | null
+  pickleLocations: PickleLocation[]
 }
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN
 
-export default function MapStart({ userLocation, pickleLocations }: MapStartProps) {
+export default function MapStart({ userLocation, mapCenter, pickleLocations }: MapStartProps) {
     const mapContainerRef = useRef<HTMLDivElement>(null);
     const [viewState, setViewState] = useState({
         latitude: 40.708720,
@@ -43,14 +44,20 @@ export default function MapStart({ userLocation, pickleLocations }: MapStartProp
     }, []);
 
     useEffect(() => {
-        if (userLocation) {
+        if (mapCenter) {
+            setViewState({
+                latitude: mapCenter.latitude,
+                longitude: mapCenter.longitude,
+                zoom: 16
+            })
+        } else if (userLocation) {
             setViewState({
                 latitude: userLocation.latitude,
                 longitude: userLocation.longitude,
-                zoom: 24
+                zoom: 16
             })
         }
-    }, [userLocation])
+    }, [mapCenter, userLocation])
 
     if (!MAPBOX_TOKEN) {
         return (
