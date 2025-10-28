@@ -1,0 +1,206 @@
+[
+    {
+        "name": "Lucy Lies",
+        "rentalRate": 50,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fb9d5c9a2-fc53-4dc0-a659-d5292c5162e0",
+        "rating": 4.7,
+        "prepMinutes": 30
+    },
+    {
+        "name": "Elliatt Tulsia Floral Cape Maxi Dress",
+        "rentalRate": 115,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fb24d5461-e1c6-4e26-a6ea-c683862fee2b",
+        "rating": 4.8,
+        "prepMinutes": 25
+    },
+    {
+        "name": "Amanda Uprichard Navy Halterneck Maxi",
+        "rentalRate": 70,
+        "image_url": "https://images.unsplash.com/photo-1513385376587-b5e34da7ac8a?w=300",
+        "rating": 4.5,
+        "prepMinutes": 40
+    },
+    {
+        "name": "Maygel Coronel Villadiego Maxi Dress",
+        "rentalRate": 120,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fd4df268f-96ed-4941-a0ff-a4e1801978d1",
+        "rating": 4.9,
+        "prepMinutes": 20
+    },
+    {
+        "name": "GUIZIO Ara Top And Micro Mini Set",
+        "rentalRate": 150,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fc2e53301-1faf-49a5-a807-e1780fbe925a",
+        "rating": 4.6,
+        "prepMinutes": 35
+    },
+    {
+        "name": "Idah Red Mother Of Pearl Top + Skirt",
+        "rentalRate": 70,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fa8da8c8b-e7e5-45b4-939a-6256aa302bc4",
+        "rating": 4.7,
+        "prepMinutes": 25
+    },
+    {
+        "name": "Alexis Dress",
+        "rentalRate": 100,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F9f773d30-5840-44e4-b37e-00daa0c418fd",
+        "rating": 4.8,
+        "prepMinutes": 30
+    },
+    {
+        "name": "Cult Gaia Renata Gown Ink Navy Blue",
+        "rentalRate": 90,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F56863339-abfe-4cfa-ae22-6a85d5ed0507",
+        "rating": 4.5,
+        "prepMinutes": 40
+    },
+    {
+        "name": "Pucci Purse",
+        "rentalRate": 60,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fcfa2d791-4b91-434b-8a87-cf0aba3cef20",
+        "rating": 4.3,
+        "prepMinutes": 50
+    },
+    {
+        "name": "Cult Gaia Brielle Bag",
+        "rentalRate": 140,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fed923453-89d5-475b-b1e1-18e7cb04c022",
+        "rating": 4.9,
+        "prepMinutes": 20
+    },
+    {
+        "name": "CASA BLANCA RACING CROP JACKET",
+        "rentalRate": 60,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Ff1ca69aa-8753-4afb-9e46-cf84ae0c59f7",
+        "rating": 4.4,
+        "prepMinutes": 30
+    },
+    {
+        "name": "Asta Resort Azalea Sequin Cardigan",
+        "rentalRate": 90,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F41329869-a6b9-4ad6-88ff-5cddecd97831",
+        "rating": 4.6,
+        "prepMinutes": 25
+    },
+    {
+        "name": "HANDOVER Ralph Miniskirt",
+        "rentalRate": 70,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F42a0761c-c21b-4360-be1e-9031193dedc2",
+        "rating": 4.2,
+        "prepMinutes": 35
+    },
+    {
+        "name": "Emerald Strapless Dress",
+        "rentalRate": 110,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fe8211d65-52da-4631-a270-1b7ecdaf1104",
+        "rating": 4.8,
+        "prepMinutes": 20
+    },
+    {
+        "name": "Norma Kamali Ruffle Mini Dress",
+        "rentalRate": 80,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F73285e7e-10ae-4f4c-9f1a-e7b327e624e6",
+        "rating": 4.5,
+        "prepMinutes": 30
+    },
+    {
+        "name": "Cult Gaia Pearl Clutch Bag",
+        "rentalRate": 60,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F9c63acd4-20ce-425a-a497-8f283f43b642",
+        "rating": 4.3,
+        "prepMinutes": 40
+    },
+    {
+        "name": "Khaite Snakeskin Bustier",
+        "rentalRate": 100,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fb9e5e4d3-4038-44d2-941c-2063a5512577",
+        "rating": 4.7,
+        "prepMinutes": 25
+    },
+    {
+        "name": "MISSONI Ombré Crochet Knit Turtleneck",
+        "rentalRate": 130,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fa970ec84-d811-42c2-994e-9c12cee71085",
+        "rating": 4.9,
+        "prepMinutes": 15
+    },
+    {
+        "name": "Staud Crop Top",
+        "rentalRate": 70,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fd2a5f1ff-f788-41aa-9a9d-a8acc14448d9",
+        "rating": 4.4,
+        "prepMinutes": 35
+    },
+    {
+        "name": "Ramona Kate Moss Sweatshirt",
+        "rentalRate": 90,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Faca817e1-918d-4c5e-b20c-ddf6a0d73c7e",
+        "rating": 4.6,
+        "prepMinutes": 20
+    },
+    {
+        "name": "Parke Floral Pullover Fleece",
+        "rentalRate": 80,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F638a0e38-426b-4a86-a951-5eff4576b06c",
+        "rating": 4.5,
+        "prepMinutes": 30
+    },
+    {
+        "name": "Rare Adidas x Ji Won Choi Jacket",
+        "rentalRate": 120,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F7efbf525-412f-4610-aa54-470b1ac7603a",
+        "rating": 4.8,
+        "prepMinutes": 20
+    },
+    {
+        "name": "Courreges Green Reedition Vinyl Jacket",
+        "rentalRate": 110,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F105acf27-3443-4bf1-bb7f-e9d6a53d8f62",
+        "rating": 4.4,
+        "prepMinutes": 30
+    },
+    {
+        "name": "ALC Green Mila Jacket",
+        "rentalRate": 60,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fff4ed9e1-2967-40f7-be80-38cedba48c98",
+        "rating": 4.2,
+        "prepMinutes": 40
+    },
+    {
+        "name": "Reformation Ophelia Denim Top",
+        "rentalRate": 100,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F4d9a522c-308f-4d7b-a2c8-6cf44a3caa79",
+        "rating": 4.7,
+        "prepMinutes": 25
+    },
+    {
+        "name": "Reformtion Denim Halter Top",
+        "rentalRate": 90,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fff580ad3-84ee-4193-a290-c7fbeaadc7a7",
+        "rating": 4.5,
+        "prepMinutes": 30
+    },
+    {
+        "name": "Black Dress With Black Gloves",
+        "rentalRate": 180,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F95655590-8698-482c-9c6f-dfa6fcf73c06",
+        "rating": 4.9,
+        "prepMinutes": 15
+    },
+    {
+        "name": "Feather Dress With Gloves",
+        "rentalRate": 70,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2F8b8e9803-8db2-4555-bead-4c33eaa7d52a",
+        "rating": 4.3,
+        "prepMinutes": 35
+    },
+    {
+        "name": "Miscreants Cupid Dress And Gloves",
+        "rentalRate": 80,
+        "image_url": "https://dnlc2p0nyuqvz.cloudfront.net/productImages%2Fba252d6d-ef3e-45a0-9568-f749f4faecaa",
+        "rating": 4.6,
+        "prepMinutes": 25
+    }
+
+]

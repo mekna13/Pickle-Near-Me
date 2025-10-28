@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import PickleMarker from './PickleMarker'
 
 interface LocationModalProps {
   isOpen: boolean
