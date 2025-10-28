@@ -6,6 +6,32 @@ import mapboxgl from "mapbox-gl";
 import 'mapbox-gl/dist/mapbox-gl.css'
 import PickleMarker from './PickleMarker'
 
+const mobileStyles = `
+  <style>
+    @media (max-width: 768px) {
+      .pickle-banner {
+        top: 8px !important;
+        right: 8px !important;
+        left: 8px !important;
+        max-width: none !important;
+        padding: 8px !important;
+      }
+      .pickle-banner .banner-title {
+        font-size: 12px !important;
+      }
+      .pickle-banner .banner-name {
+        font-size: 13px !important;
+      }
+      .pickle-banner .banner-details {
+        font-size: 11px !important;
+      }
+      .pickle-banner .banner-price {
+        font-size: 11px !important;
+      }
+    }
+  </style>
+`
+
 interface UserLocation {
   latitude: number
   longitude: number
@@ -76,7 +102,59 @@ export default function MapStart({ userLocation, mapCenter, pickleLocations }: M
     }
 
     return (
-        <div ref={mapContainerRef} className="w-full h-full" id="map-container">
+        <>
+            <div dangerouslySetInnerHTML={{ __html: mobileStyles }} />
+            <div ref={mapContainerRef} style={{ width: '100%', height: '100%', position: 'relative' }} id="map-container">
+                {/* Closest Pickle Banner */}
+                {pickleLocations.length > 0 && userLocation && (
+                    <div className="pickle-banner" style={{
+                        position: 'absolute',
+                        top: '16px',
+                        right: '16px',
+                        zIndex: 10,
+                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                        borderRadius: '8px',
+                        padding: '12px',
+                        boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                        border: '1px solid #e5e7eb',
+                        maxWidth: '280px',
+                        backdropFilter: 'blur(4px)'
+                    }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <div style={{
+                                width: '8px',
+                                height: '8px',
+                                backgroundColor: '#10b981',
+                                borderRadius: '50%'
+                            }}></div>
+                            <span className="banner-title" style={{
+                                fontSize: '14px',
+                                fontWeight: '500',
+                                color: '#374151'
+                            }}>Closest to you</span>
+                        </div>
+                        <div style={{ marginTop: '4px' }}>
+                            <p className="banner-name" style={{
+                                fontSize: '14px',
+                                fontWeight: '600',
+                                color: '#111827',
+                                margin: '0 0 2px 0'
+                            }}>{pickleLocations[0].name}</p>
+                            <p className="banner-details" style={{
+                                fontSize: '12px',
+                                color: '#6b7280',
+                                margin: '0 0 2px 0'
+                            }}>{pickleLocations[0].miles} miles away</p>
+                            <p className="banner-price" style={{
+                                fontSize: '12px',
+                                color: '#059669',
+                                fontWeight: '500',
+                                margin: '0'
+                            }}>${pickleLocations[0].rentalRate}/day</p>
+                        </div>
+                    </div>
+                )}
+
             <Map
                 {...viewState}
                 onMove={evt => setViewState(evt.viewState)}
@@ -103,6 +181,7 @@ export default function MapStart({ userLocation, mapCenter, pickleLocations }: M
                     </Marker>
                 ))}
             </Map>
-        </div>
+            </div>
+        </>
     );
 }

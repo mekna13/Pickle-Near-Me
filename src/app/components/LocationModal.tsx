@@ -3,6 +3,37 @@
 import { useState } from 'react'
 import PickleMarker from './PickleMarker'
 
+const mobileStyles = `
+  <style>
+    @media (max-width: 768px) {
+      .location-modal {
+        width: 90% !important;
+        margin: 16px !important;
+        padding: 20px !important;
+      }
+      .location-modal h2 {
+        font-size: 1.25rem !important;
+      }
+      .location-modal p {
+        font-size: 0.875rem !important;
+      }
+      .location-modal button {
+        padding: 16px !important;
+        font-size: 1rem !important;
+        min-height: 48px !important;
+      }
+      .location-modal .error-message {
+        padding: 16px !important;
+        font-size: 0.875rem !important;
+      }
+      .location-modal .privacy-text {
+        font-size: 0.75rem !important;
+        margin-top: 20px !important;
+      }
+    }
+  </style>
+`
+
 interface LocationModalProps {
   isOpen: boolean
   onLocationGranted: (lat: number, lng: number) => void
@@ -65,10 +96,11 @@ export default function LocationModal({
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 w-screen h-screen" style={{ background: "rgba(0,0,0,0.5)" }}>
-      <div className="bg-white rounded-lg shadow-xl max-w-md w-1/3 p-6 relative" style={{ background: "white", borderRadius: "12px", boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)", fontFamily: "Raleway, sans-serif", padding: "24px" }}>
+    <>
+      <div dangerouslySetInnerHTML={{ __html: mobileStyles }} />
+      <div className="fixed inset-0 flex items-center justify-center z-50 w-screen h-screen" style={{ background: "rgba(0,0,0,0.5)" }}>
+        <div className="location-modal bg-white rounded-lg shadow-xl max-w-md w-1/3 p-6 relative" style={{ background: "white", borderRadius: "12px", boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)", fontFamily: "Raleway, sans-serif", padding: "24px" }}>
         <div className="text-center mb-6" style={{ fontFamily: "Raleway, sans-serif", textAlign: "center", marginBottom: "24px" }}>
-          <div className="text-4xl mb-4" style={{ fontSize: "2.25rem", marginBottom: "16px" }}>📍</div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2" style={{ fontFamily: "Raleway, sans-serif", color: "#1f2937", fontSize: "1.5rem", fontWeight: "700", marginBottom: "8px" }}>
             Find Pickles Near You
           </h2>
@@ -78,7 +110,7 @@ export default function LocationModal({
         </div>
 
         {error && (
-          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4" style={{ backgroundColor: "#fef2f2", border: "1px solid #fecaca", color: "#b91c1c", borderRadius: "6px", fontFamily: "Raleway, sans-serif", padding: "12px 16px", marginBottom: "16px" }}>
+          <div className="error-message bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4" style={{ backgroundColor: "#fef2f2", border: "1px solid #fecaca", color: "#b91c1c", borderRadius: "6px", fontFamily: "Raleway, sans-serif", padding: "12px 16px", marginBottom: "16px" }}>
             {error}
           </div>
         )}
@@ -113,10 +145,11 @@ export default function LocationModal({
           </button>
         </div>
 
-        <p className="text-xs text-gray-500 text-center mt-4" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280", fontSize: "0.75rem", textAlign: "center", marginTop: "16px" }}>
+        <p className="privacy-text text-xs text-gray-500 text-center mt-4" style={{ fontFamily: "Raleway, sans-serif", color: "#6b7280", fontSize: "0.75rem", textAlign: "center", marginTop: "16px" }}>
           We only use your location to show nearby pickle spots. Your location is not stored or shared.
         </p>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
