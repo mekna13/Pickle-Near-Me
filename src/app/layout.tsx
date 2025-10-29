@@ -6,7 +6,7 @@ const raleway = Raleway({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Pickle Near Me',
-  description: 'Find the best pickles near you',
+  description: 'Find the fashion rentals near you',
 }
 
 export default function RootLayout({

@@ -102,7 +102,7 @@ export default function LocationModal({
         <div className="location-modal bg-white rounded-lg shadow-xl max-w-md w-1/3 p-6 relative" style={{ background: "white", borderRadius: "12px", boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)", fontFamily: "Raleway, sans-serif", padding: "24px" }}>
         <div className="text-center mb-6" style={{ fontFamily: "Raleway, sans-serif", textAlign: "center", marginBottom: "24px" }}>
           <h2 className="text-2xl font-bold text-gray-900 mb-2" style={{ fontFamily: "Raleway, sans-serif", color: "#1f2937", fontSize: "1.5rem", fontWeight: "700", marginBottom: "8px" }}>
-            Find Pickles Near You
+              Find Pickle Near You
           </h2>
           <p className="text-gray-600" style={{ fontFamily: "Raleway, sans-serif", color: "#4b5563" }}>
             Allow location access to discover the best pickle spots in your area
